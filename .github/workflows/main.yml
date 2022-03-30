@@ -4,7 +4,6 @@ on:
   push:
     branches:
     - master
-    - release/*
 
 jobs:
   firebase-deploy:
@@ -15,11 +14,11 @@ jobs:
     - uses: actions/checkout@master
     - uses: actions/setup-node@master
       with:
-        node-version: '16.x'
+        node-version: '12.x'
     - run: npm install
     - run: npm run build:prod
     - uses: w9jds/firebase-action@master
       with:
         args: deploy --only hosting
       env:
-        FIREBASE_TOKEN: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ANGULAR_ECOMMERCE_55931 }}
+        FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
