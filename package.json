@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "setup": "npm install && npx cordova prepare && npx gulp"
+    "build:prod": "ng build --prod"
   },
   "private": true,
   "dependencies": {
