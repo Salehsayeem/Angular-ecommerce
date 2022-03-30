@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "setup": "npm install && npx cordova prepare && npx gulp"
   },
   "private": true,
   "dependencies": {
