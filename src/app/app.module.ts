@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductsComponent } from './products/products.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { CheckOutComponent } from './check-out/check-out.component';
-import {LoginComponent} from './login/login.component';
+import { LoginComponent } from './login/login.component';
 import { OrderSuccessComponent } from './order-success/order-success.component';
 import { MyOrdersComponent } from './my-orders/my-orders.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
@@ -30,7 +30,7 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
     MyOrdersComponent,
     AdminProductsComponent,
     AdminOrdersComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,17 +38,17 @@ import { AdminOrdersComponent } from './admin/admin-orders/admin-orders.componen
     NgbModule,
     NgbPaginationModule,
     RouterModule.forRoot([
-      {path : '',component:HomeComponent},
-      {path : 'products',component:ProductsComponent},
-      {path : 'shopping-cart',component:ShoppingCartComponent},
-      {path : 'check-out',component:CheckOutComponent},
-      {path : 'order-success',component:OrderSuccessComponent},
-      {path : 'login',component:LoginComponent},
-      {path : 'admin/admin-products',component:AdminProductsComponent},
-      {path : 'admin/admin-orders',component:AdminOrdersComponent},
-    ])
+      { path: '', component: HomeComponent },
+      { path: 'products', component: ProductsComponent },
+      { path: 'shopping-cart', component: ShoppingCartComponent },
+      { path: 'check-out', component: CheckOutComponent },
+      { path: 'order-success', component: OrderSuccessComponent },
+      { path: 'login', component: LoginComponent },
+      { path: 'admin/admin-products', component: AdminProductsComponent },
+      { path: 'admin/admin-orders', component: AdminOrdersComponent },
+    ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
